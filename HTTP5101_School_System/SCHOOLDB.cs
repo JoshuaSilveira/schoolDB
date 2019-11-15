@@ -10,6 +10,8 @@ namespace HTTP5101_School_System
 {
     public class SCHOOLDB
     {
+
+        string hello = "";
         //things that describe a database
         // - A connection (url, port)
         // - A username
