@@ -15,7 +15,7 @@ namespace HTTP5101_School_System
         // - A username
         // - A password
         // - A database
-
+        string dog = "dog";
         //do not expose these pieces of information!
         //how do I know these?
         //boot up MAMP, open start page
