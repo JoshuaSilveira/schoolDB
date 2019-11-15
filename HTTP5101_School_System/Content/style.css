@@ -2,7 +2,7 @@
 /*GENERAL CSS*/
 .cwidth{max-width:1080px; margin:0 auto;}
 header,footer{background:#b2b2b2;}
-header{margin-bottom:50px;}
+header{margin-bottom:50px; background:green;}
 footer{margin-top:50px;}
 
 
@@ -20,4 +20,19 @@ footer{margin-top:50px;}
 */
 .col4, .col4last{float:left; width:21.73%; margin-right:4.34%;}
 .col4last{margin-right:0%;}
+
+/*
+Each column should be 17.48% wide with a gutter space of 3.14%
+*/
+.col5 {
+    width: 17.48%;
+    float: left;
+    margin-right: 3.14%;
+}
+
+.col5last {
+    width: 17.48%;
+    float: left;
+    margin-right: 0;
+}
 
