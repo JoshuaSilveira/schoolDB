@@ -143,7 +143,7 @@
     <Content Include="ListTeachers.aspx" />
     <Content Include="ListClasses.aspx" />
     <Content Include="View.aspx" />
-    <Content Include="Add.aspx" />
+    <Content Include="AddTeacher.aspx" />
     <Content Include="ShowStudent.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="ListStudents.aspx" />
@@ -221,12 +221,12 @@
     <Compile Include="View.aspx.designer.cs">
       <DependentUpon>View.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Add.aspx.cs">
-      <DependentUpon>Add.aspx</DependentUpon>
+    <Compile Include="AddTeacher.aspx.cs">
+      <DependentUpon>AddTeacher.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Add.aspx.designer.cs">
-      <DependentUpon>Add.aspx</DependentUpon>
+    <Compile Include="AddTeacher.aspx.designer.cs">
+      <DependentUpon>AddTeacher.aspx</DependentUpon>
     </Compile>
     <Compile Include="ShowStudent.aspx.cs">
       <DependentUpon>ShowStudent.aspx</DependentUpon>
