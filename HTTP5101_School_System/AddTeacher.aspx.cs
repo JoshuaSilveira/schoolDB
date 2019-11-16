@@ -32,7 +32,7 @@ namespace HTTP5101_School_System
             }
             
             
-            System.Diagnostics.Debug.WriteLine(teacherfname);
+            //System.Diagnostics.Debug.WriteLine(teacherfname); Line to print to vs console
             
         }
     }

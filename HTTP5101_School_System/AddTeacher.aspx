@@ -7,4 +7,6 @@
     <asp:TextBox ID="teacher_hiredate" runat="server"></asp:TextBox>
     <asp:TextBox ID="teacher_salary" runat="server"></asp:TextBox>
     <asp:Button runat="server" Text="submit"/>
+
+    <a href ="ListTeachers.aspx">List Teachers</a>
 </asp:Content>
