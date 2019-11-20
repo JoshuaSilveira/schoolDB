@@ -9,8 +9,10 @@ namespace HTTP5101_School_System
 {
     public partial class ShowStudent : System.Web.UI.Page
     {
+        int id = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
+
             bool valid = true;
             string studentid = Request.QueryString["studentid"];
             if (String.IsNullOrEmpty(studentid)) valid = false;
@@ -18,6 +20,7 @@ namespace HTTP5101_School_System
             //We will attempt to get the record we need
             if (valid)
             {
+                id = Int32.Parse(studentid);
                 var db = new SCHOOLDB();
                 Dictionary<String, String> student_record = db.FindStudent(Int32.Parse(studentid));
 
@@ -39,6 +42,13 @@ namespace HTTP5101_School_System
             {
                 student.InnerHtml = "There was an error finding that student.";
             }
+        }
+
+        protected void deleteStudent_Click(object sender, EventArgs e)
+        {
+            var db = new SCHOOLDB();
+            db.Add_Query("DELETE FROM `students` WHERE `STUDENTID` = " + id + "");
+            Server.Transfer("ListStudents.aspx");
         }
     }
 }

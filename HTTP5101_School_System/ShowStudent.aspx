@@ -5,6 +5,8 @@
         First Name: <span id="student_fname" runat="server"></span><br />
         Last Name: <span id="student_lname" runat="server"></span><br />
         Student Number: <span id="student_number" runat="server"></span><br />
-        Enrolment Date: <span id="enrolment_date" runat="server"></span><br />
+        Enrolment Date: <span id="enrolment_date" runat="server"></span><br /> 
+        <asp:Button runat="server" id="deleteStudent" Text="Remove This Student" OnClick="deleteStudent_Click" />
     </div>
+   
 </asp:Content>
