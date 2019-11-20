@@ -13,6 +13,12 @@
             Humber School District Database
         </div>
     </header>
+        <nav>
+            <a href="ListTeachers.aspx">Teachers</a>
+            <a href="ListStudents.aspx">Students</a>
+            <a href="ListClasses.aspx">Classes</a>
+            <a href="#">Add</a>
+        </nav>
     <div class="cwidth">
         <form id="form1" runat="server">
             <asp:ContentPlaceHolder ID="body" runat="server">
