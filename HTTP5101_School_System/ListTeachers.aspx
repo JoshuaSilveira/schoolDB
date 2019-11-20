@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Specific" Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Layout.Master"  CodeBehind="ListTeachers.aspx.cs" Inherits="HTTP5101_School_System.WebForm1" %>
+﻿<%@Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Layout.Master"  CodeBehind="ListTeachers.aspx.cs" Inherits="HTTP5101_School_System.WebForm1" %>
 
 <asp:Content ID="teachers_list" ContentPlaceHolderID="body" runat="server">
     <h1>Teachers</h1>
