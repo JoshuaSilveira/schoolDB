@@ -33,4 +33,6 @@
 
     <asp:Button runat="server" Text="submit"/>
 
+    <a href ="ListClasses.aspx">List classes</a>
+
 </asp:Content>
