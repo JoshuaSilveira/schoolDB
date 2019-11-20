@@ -145,6 +145,7 @@
     <Content Include="View.aspx" />
     <Content Include="AddTeacher.aspx" />
     <Content Include="ShowStudent.aspx" />
+    <Content Include="AddStudent.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="ListStudents.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -234,6 +235,13 @@
     </Compile>
     <Compile Include="ShowStudent.aspx.designer.cs">
       <DependentUpon>ShowStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddStudent.aspx.cs">
+      <DependentUpon>AddStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddStudent.aspx.designer.cs">
+      <DependentUpon>AddStudent.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
