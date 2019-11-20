@@ -60,6 +60,7 @@ namespace HTTP5101_School_System
             }
             Connect.Close();
         }
+       
         public Dictionary<String, String> FindStudent(int id)
         {
             //Utilize the connection string
