@@ -13,13 +13,32 @@ namespace HTTP5101_School_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-        
-                
-                var db = new SCHOOLDB();
+
+
+            String searchQuery = "";
+            teachers_result.InnerHtml = "";
+            if (Page.IsPostBack)
+            {
+                searchQuery = search.Text.ToString();
+            }
+
+            string query = "select * from teachers";
+
+            if (searchQuery != "")
+            {
+                query += " WHERE TEACHERFNAME like '%" + searchQuery + "%' ";
+                query += " or TEACHERLNAME like '%" + searchQuery + "%' ";
+                query += " or EMPLOYEENUMBER like '%" + searchQuery + "%' ";
+            }
+
+
+            var db = new SCHOOLDB();
                 List<Dictionary<String, String>> rs = db.List_Query("select * from teachers");
                 foreach (Dictionary<String, String> row in rs)
                 {
                     teachers_result.InnerHtml += "<div class=\"listitem\">";
+
+                    string teacherid = row["TEACHERID"];
 
                     string teacherfirstname = row["TEACHERFNAME"];
                     teachers_result.InnerHtml += "<div class=\"col5\">" + teacherfirstname + "</div>";

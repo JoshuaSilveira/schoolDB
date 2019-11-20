@@ -2,8 +2,9 @@
 /*GENERAL CSS*/
 .cwidth{max-width:1080px; margin:0 auto;}
 header,footer{background:#b2b2b2;}
-header{margin-bottom:50px; background:green;}
-footer{margin-top:50px;}
+header{margin:40px; padding:40px; border: 1px solid black; font-size:20px; text-align:center;font-family:sans-serif; background-color:white;}
+body{font-family:sans-serif;}
+footer{margin-top:50px;text-align:center;font-size:10px;}
 
 
 /*CSS FOR TABLE-LIKE STYLING*/
@@ -24,15 +25,25 @@ footer{margin-top:50px;}
 /*
 Each column should be 17.48% wide with a gutter space of 3.14%
 */
-.col5 {
-    width: 17.48%;
+#students_result {width:100%;}
+#teachers_result {width:100%;}
+.listitem {background:#fefefe; padding: 12px 5%; width:90%; overflow:hidden;}
+
+.listitem:after{clear:both;}
+.listitem:nth-child(2n){background:#dedede;}
+.listitem:hover {background: #e9d898;}
+/*
+    sandbox.bittsdevelopment.com/colcalc
+    columns : 4
+    gutter/column ratio : 0.2
+*/
+.col5, .col5last {
     float: left;
-    margin-right: 3.14%;
+    width: 21.73%;
+    margin-right: 4.34%;
 }
 
 .col5last {
-    width: 17.48%;
-    float: left;
-    margin-right: 0;
+    margin-right: 0%;
 }
 
