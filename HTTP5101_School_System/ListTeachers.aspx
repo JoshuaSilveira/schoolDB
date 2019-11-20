@@ -4,7 +4,7 @@
     <h1>Teachers</h1>
     <div><asp:TextBox ID="search" runat="server"></asp:TextBox>
         <asp:Button runat="server" Text="submit"/></div>
-    <div id="teachers_result" class="_table" runat="server">
+    <div class="_table" runat="server">
         
             <div class="listitem">
                 <div class="col5">FIRST NAME</div>
@@ -13,6 +13,7 @@
                 <div class="col5">HIRED DATE</div>
                 <div class="col5last">SALARY</div>
             </div>
+        <div id="teachers_result" runat="server"></div>
         
         </div>
 </asp:Content>

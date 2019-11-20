@@ -28,12 +28,12 @@ namespace HTTP5101_School_System
             {
                 query += " WHERE TEACHERFNAME like '%" + searchQuery + "%' ";
                 query += " or TEACHERLNAME like '%" + searchQuery + "%' ";
-                query += " or EMPLOYEENUMBER like '%" + searchQuery + "%' ";
+               // query += " or EMPLOYEENUMBER like '%" + searchQuery + "%' ";
             }
-
+            System.Diagnostics.Debug.WriteLine(query); 
 
             var db = new SCHOOLDB();
-                List<Dictionary<String, String>> rs = db.List_Query("select * from teachers");
+                List<Dictionary<String, String>> rs = db.List_Query(query);
                 foreach (Dictionary<String, String> row in rs)
                 {
                     teachers_result.InnerHtml += "<div class=\"listitem\">";
@@ -41,7 +41,7 @@ namespace HTTP5101_School_System
                     string teacherid = row["TEACHERID"];
 
                     string teacherfirstname = row["TEACHERFNAME"];
-                    teachers_result.InnerHtml += "<div class=\"col5\">" + teacherfirstname + "</div>";
+                    teachers_result.InnerHtml += "<div class=\"col5\"><a href=\"ShowTeacher.aspx?teacherid="+ teacherid + "\">" + teacherfirstname + "</a></div>";
 
                     string teacherlastname = row["TEACHERLNAME"];
                     teachers_result.InnerHtml += "<div class=\"col5\">" + teacherlastname + "</div>";
