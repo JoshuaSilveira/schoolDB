@@ -15,6 +15,15 @@ namespace HTTP5101_School_System
     {
 
         /// <summary>
+        /// teacheridLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label teacheridLabel;
+
+        /// <summary>
         /// teacher_id control.
         /// </summary>
         /// <remarks>
@@ -22,6 +31,15 @@ namespace HTTP5101_School_System
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox teacher_id;
+
+        /// <summary>
+        /// nameLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label nameLabel;
 
         /// <summary>
         /// name control.
@@ -33,6 +51,15 @@ namespace HTTP5101_School_System
         protected global::System.Web.UI.WebControls.TextBox name;
 
         /// <summary>
+        /// lnameLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lnameLabel;
+
+        /// <summary>
         /// lname control.
         /// </summary>
         /// <remarks>
@@ -40,6 +67,15 @@ namespace HTTP5101_School_System
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox lname;
+
+        /// <summary>
+        /// employeenumberLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label employeenumberLabel;
 
         /// <summary>
         /// teacher_employeenumber control.
@@ -51,6 +87,15 @@ namespace HTTP5101_School_System
         protected global::System.Web.UI.WebControls.TextBox teacher_employeenumber;
 
         /// <summary>
+        /// hiredateLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label hiredateLabel;
+
+        /// <summary>
         /// teacher_hiredate control.
         /// </summary>
         /// <remarks>
@@ -58,6 +103,15 @@ namespace HTTP5101_School_System
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox teacher_hiredate;
+
+        /// <summary>
+        /// salaryLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label salaryLabel;
 
         /// <summary>
         /// teacher_salary control.

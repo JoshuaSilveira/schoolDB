@@ -18,5 +18,5 @@
 
         </div>
     </div>
-    <div  style="color:blue; font-size:22px;" >WEb App Class</div>
+   
 </asp:Content>
