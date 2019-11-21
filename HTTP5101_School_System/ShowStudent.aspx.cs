@@ -22,7 +22,31 @@ namespace HTTP5101_School_System
             {
                 id = Int32.Parse(studentid);
                 var db = new SCHOOLDB();
-                Dictionary<String, String> student_record = db.FindStudent(Int32.Parse(studentid));
+                Dictionary<String, String> student_record = db.FindStudent(id);
+
+                
+                List<Dictionary<String, String>> rs = db.List_Query("SELECT CLASSCODE,STARTDATE,FINISHDATE,CLASSNAME FROM `classes` inner join studentsxclasses on " +
+                    "classes.CLASSID = studentsxclasses.CLASSID WHERE studentsxclasses.STUDENTID = "+id+"");
+
+                foreach (Dictionary<String, String> row in rs)
+                {
+                    classes_result.InnerHtml += "<div class=\"listitem\">";
+
+                    string classcode = row["CLASSCODE"];
+                    classes_result.InnerHtml += "<div class=\"col4\">" + classcode + "</div>";
+
+                    string startdate = row["STARTDATE"];
+                    classes_result.InnerHtml += "<div class=\"col4\">" + startdate + "</div>";
+
+                    string finishdate = row["FINISHDATE"];
+                    classes_result.InnerHtml += "<div class=\"col4\">" + finishdate + "</div>";
+
+                    string classname = row["CLASSNAME"];
+                    classes_result.InnerHtml += "<div class=\"col4last\">" + classname + "</div>";
+
+                    classes_result.InnerHtml += "</div>";
+
+                }
 
                 if (student_record.Count > 0)
                 {
@@ -31,6 +55,9 @@ namespace HTTP5101_School_System
                     student_lname.InnerHtml = student_record["STUDENTLNAME"];
                     student_number.InnerHtml = student_record["STUDENTNUMBER"];
                     enrolment_date.InnerHtml = student_record["ENROLMENTDATE"];
+
+                    
+                    
                 }
                 else
                 {

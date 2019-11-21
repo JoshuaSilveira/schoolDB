@@ -10,5 +10,5 @@
             <div class="col5">FINISH DATE</div>
             <div class="col5last">CLASSNAME</div>
             </div>
-        </div>
+    </div>
 </asp:Content>

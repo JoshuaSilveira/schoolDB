@@ -7,6 +7,16 @@
         Student Number: <span id="student_number" runat="server"></span><br />
         Enrolment Date: <span id="enrolment_date" runat="server"></span><br /> 
         <asp:Button runat="server" id="deleteStudent" Text="Remove This Student" OnClick="deleteStudent_Click" />
+        
+    <div id="classes_result" class="_table" runat="server">
+        
+            <div class="listitem">
+                <div class="col4">CLASS CODE</div>
+                <div class="col4">START DATE</div>
+                <div class="col4">FINISH DATE</div>
+                <div class="col4last">CLASSNAME</div>
+            </div>
+    </div>
     </div>
    
 </asp:Content>

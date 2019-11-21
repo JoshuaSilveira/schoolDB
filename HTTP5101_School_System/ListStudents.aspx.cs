@@ -34,7 +34,7 @@ namespace HTTP5101_School_System
                 query += " or STUDENTLNAME like '%" + searchQuery + "%' ";
                 query += " or STUDENTNUMBER like '%" + searchQuery + "%' ";
             }
-
+            System.Diagnostics.Debug.WriteLine(query);
             var db = new SCHOOLDB();
             //students_result.InnerHtml = "<div class=\"listitem\"></div>";
             //when information is pulled from database to chnage markup is called rendering loop
