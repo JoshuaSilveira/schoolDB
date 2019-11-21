@@ -7,5 +7,18 @@
         Student Number: <span id="employee_number" runat="server"></span><br />
         Salary: <span id="teacher_salary" runat="server"></span><br />
         Enrolment Date: <span id="hire_date" runat="server"></span><br />
+
+        <asp:Button runat="server" id="deleteteacher" Text="Remove This Teacher" OnClick="deleteTeacher_Click" />
+
+        <div id="classes_result" class="_table" runat="server">
+        
+            <div class="listitem">
+                <div class="col4">CLASS CODE</div>
+                <div class="col4">START DATE</div>
+                <div class="col4">FINISH DATE</div>
+                <div class="col4last">CLASSNAME</div>
+            </div>
     </div>
+    </div>
+
 </asp:Content>
