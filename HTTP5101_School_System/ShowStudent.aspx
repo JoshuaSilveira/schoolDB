@@ -9,14 +9,18 @@
         <asp:Button runat="server" id="deleteStudent" Text="Remove This Student" OnClick="deleteStudent_Click" />
         
         <br />
+        <asp:Label ID="updatefnamelabel" Text="First Name" AssociatedControlID="update_student_first_name" runat="server"></asp:Label>
         <asp:TextBox ID="update_student_first_name" runat="server"></asp:TextBox>
-        <asp:Label ID="updatefnamelabel" Text="Teacher id" AssociatedControlID="update_student_first_name" runat="server"></asp:Label>
         <br />
+        <asp:Label ID="updatelnamelabel" Text="Last Name" AssociatedControlID="update_student_last_name" runat="server"></asp:Label>
         <asp:TextBox ID="update_student_last_name" runat="server"></asp:TextBox>
         <br />
+        <asp:Label ID="studentnumlabel" Text="Student Number" AssociatedControlID="update_student_num" runat="server"></asp:Label>
         <asp:TextBox ID="update_student_num" runat="server"></asp:TextBox>
         <br />
+        <asp:Label ID="updateenrolllabel" Text="Enrollment Date" AssociatedControlID="update_enrollment_date" runat="server"></asp:Label>
         <asp:TextBox ID="update_enrollment_date" runat="server"></asp:TextBox>
+        <asp:Button runat="server" id="updateStudent" Text="Update This Student" OnClick="updateStudent_Click" />
 
 
     <div id="classes_result" class="_table" runat="server">

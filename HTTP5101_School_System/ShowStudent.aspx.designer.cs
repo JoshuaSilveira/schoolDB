@@ -78,6 +78,15 @@ namespace HTTP5101_School_System
         protected global::System.Web.UI.WebControls.Button deleteStudent;
 
         /// <summary>
+        /// updatefnamelabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label updatefnamelabel;
+
+        /// <summary>
         /// update_student_first_name control.
         /// </summary>
         /// <remarks>
@@ -87,13 +96,13 @@ namespace HTTP5101_School_System
         protected global::System.Web.UI.WebControls.TextBox update_student_first_name;
 
         /// <summary>
-        /// updatefnamelabel control.
+        /// updatelnamelabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label updatefnamelabel;
+        protected global::System.Web.UI.WebControls.Label updatelnamelabel;
 
         /// <summary>
         /// update_student_last_name control.
@@ -105,6 +114,15 @@ namespace HTTP5101_School_System
         protected global::System.Web.UI.WebControls.TextBox update_student_last_name;
 
         /// <summary>
+        /// studentnumlabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label studentnumlabel;
+
+        /// <summary>
         /// update_student_num control.
         /// </summary>
         /// <remarks>
@@ -114,6 +132,15 @@ namespace HTTP5101_School_System
         protected global::System.Web.UI.WebControls.TextBox update_student_num;
 
         /// <summary>
+        /// updateenrolllabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label updateenrolllabel;
+
+        /// <summary>
         /// update_enrollment_date control.
         /// </summary>
         /// <remarks>
@@ -121,6 +148,15 @@ namespace HTTP5101_School_System
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox update_enrollment_date;
+
+        /// <summary>
+        /// updateStudent control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button updateStudent;
 
         /// <summary>
         /// classes_result control.

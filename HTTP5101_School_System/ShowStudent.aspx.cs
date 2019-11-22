@@ -10,17 +10,19 @@ namespace HTTP5101_School_System
     public partial class ShowStudent : System.Web.UI.Page
     {
         int id = 0;
+        string updateStudentFirstName = null;
         protected void Page_Load(object sender, EventArgs e)
         {
 
             bool valid = true;
             string studentid = Request.QueryString["studentid"];
             if (String.IsNullOrEmpty(studentid)) valid = false;
-
+            
             //We will attempt to get the record we need
             if (valid)
             {
                 id = Int32.Parse(studentid);
+                updateStudentFirstName = update_student_first_name.Text.ToString();
                 var db = new SCHOOLDB();
                 Dictionary<String, String> student_record = db.FindStudent(id);
 
@@ -76,6 +78,16 @@ namespace HTTP5101_School_System
             var db = new SCHOOLDB();
             db.Add_Query("DELETE FROM `students` WHERE `STUDENTID` = " + id + "");
             Server.Transfer("ListStudents.aspx");
+        }
+
+        protected void updateStudent_Click(object sender, EventArgs e)
+        {
+            var db = new SCHOOLDB();
+            if(!String.IsNullOrEmpty(updateStudentFirstName))
+                db.Add_Query("UPDATE `students` SET `STUDENTFNAME`='"+ updateStudentFirstName + "' WHERE STUDENTID="+ id+ "");
+            
+            Server.Transfer("ShowStudent.aspx?studentid=" + id);
+
         }
     }
 }
