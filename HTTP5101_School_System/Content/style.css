@@ -5,7 +5,7 @@ header,footer{background:#b2b2b2;}
 header{margin:40px; padding:40px; border: 1px solid black; font-size:30px; text-align:center;font-family:sans-serif; background-color:white;}
 body{font-family:sans-serif;}
 footer{margin-top:50px;text-align:center;font-size:10px;}
-
+nav{text-align:center;}
 
 /*CSS FOR TABLE-LIKE STYLING*/
 #students_result {width:100%;}
@@ -55,3 +55,43 @@ Each column should be 17.24% wide with a gutter space of 3.44%
     margin-right: 0;
 }
 
+/* DROPDOWN*/
+.addbutton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-adds {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-adds a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+}
+.dropdown-adds a:hover {
+            background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-adds {
+    display: block;
+}
+
+.dropdown:hover .addbutton {
+    background-color: #3e8e41;
+}

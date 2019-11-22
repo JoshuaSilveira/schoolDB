@@ -14,10 +14,17 @@
         </div>
     </header>
         <nav>
-            <a href="ListTeachers.aspx">Teachers</a>
+            <a class="addbutton" href="ListTeachers.aspx" >Teachers</a>
             <a href="ListStudents.aspx">Students</a>
             <a href="ListClasses.aspx">Classes</a>
-            <a href="#">Add</a>
+            <div class="dropdown">
+                <button class="addbutton">Add</button>
+                <div class="dropdown-adds">
+                    <a href="AddStudent.aspx">Add a Student</a>
+                    <a href="AddTeacher.aspx">Add a Teacher</a>
+                    <a href="AddClasses.aspx">Add a Class</a>
+                </div>
+            </div>
         </nav>
     <div class="cwidth">
         <form id="form1" runat="server">
