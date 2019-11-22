@@ -8,6 +8,17 @@
         Enrolment Date: <span id="enrolment_date" runat="server"></span><br /> 
         <asp:Button runat="server" id="deleteStudent" Text="Remove This Student" OnClick="deleteStudent_Click" />
         
+        <br />
+        <asp:TextBox ID="update_student_first_name" runat="server"></asp:TextBox>
+        <asp:Label ID="updatefnamelabel" Text="Teacher id" AssociatedControlID="update_student_first_name" runat="server"></asp:Label>
+        <br />
+        <asp:TextBox ID="update_student_last_name" runat="server"></asp:TextBox>
+        <br />
+        <asp:TextBox ID="update_student_num" runat="server"></asp:TextBox>
+        <br />
+        <asp:TextBox ID="update_enrollment_date" runat="server"></asp:TextBox>
+
+
     <div id="classes_result" class="_table" runat="server">
         
             <div class="listitem">

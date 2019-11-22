@@ -8,10 +8,11 @@
     
     <asp:Label ID="classcodeLabel" Text="Class Code" AssociatedControlID="class_code" runat="server"></asp:Label>
     <asp:TextBox ID="class_code" runat="server"></asp:TextBox>
+    
 
     <br />
     
-    <asp:Label ID="teacheridLabel" Text="teacher id" AssociatedControlID="teacher_id" runat="server"></asp:Label>
+    <asp:Label ID="teacheridLabel" Text="Teacher id" AssociatedControlID="teacher_id" runat="server"></asp:Label>
     <asp:TextBox ID="teacher_id" runat="server"></asp:TextBox>
     
     <br />
