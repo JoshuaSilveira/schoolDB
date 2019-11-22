@@ -39,10 +39,12 @@ namespace HTTP5101_School_System
             }
         }
 
+
+        //A simple method that just runs a query with out a return type 
         public void Add_Query(String query)
         {
             MySqlConnection Connect = new MySqlConnection(ConnectionString);
-
+            
             try
             {
                 Debug.WriteLine("Connection Initialized...");
@@ -230,6 +232,11 @@ namespace HTTP5101_School_System
 
             return teacher;
         }
+
+        //all the find methods are the same and ideally should be one method that handles each senario with an additional parameters
+
+
+
         //returns a result set
         //is a list dictionaries
         //a dictionary is like a list but with Key:Value pairs
