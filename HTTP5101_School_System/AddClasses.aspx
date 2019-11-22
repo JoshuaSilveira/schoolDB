@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="body" runat="server">
     <div class="formfield">
         <h1>Add a Class</h1>
-        <asp:Label ID="classidLabel" Text="Class id" AssociatedControlID="class_id" runat="server"></asp:Label>
+        <asp:Label ID="classidLabel" Text="Class ID" AssociatedControlID="class_id" runat="server"></asp:Label>
         <asp:TextBox ID="class_id" runat="server"></asp:TextBox>
 
         <br />
@@ -12,7 +12,7 @@
 
         <br />
     
-        <asp:Label ID="teacheridLabel" Text="Teacher id" AssociatedControlID="teacher_id" runat="server"></asp:Label>
+        <asp:Label ID="teacheridLabel" Text="Teacher ID" AssociatedControlID="teacher_id" runat="server"></asp:Label>
         <asp:TextBox ID="teacher_id" runat="server"></asp:TextBox>
     
         <br />
@@ -27,7 +27,7 @@
 
         <br />
     
-        <asp:Label ID="classnameLabel" Text="Class name" AssociatedControlID="class_name" runat="server"></asp:Label>
+        <asp:Label ID="classnameLabel" Text="Class Name" AssociatedControlID="class_name" runat="server"></asp:Label>
         <asp:TextBox ID="class_name" runat="server"></asp:TextBox>
 
         <br />

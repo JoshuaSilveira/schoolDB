@@ -3,7 +3,7 @@
     
     <div class="formfield">
     <h1>Add a Teacher</h1>
-    <asp:Label ID="teacheridLabel" Text="Teacher id" AssociatedControlID="teacher_id" runat="server"></asp:Label>
+    <asp:Label ID="teacheridLabel" Text="Teacher ID" AssociatedControlID="teacher_id" runat="server"></asp:Label>
     <asp:TextBox ID="teacher_id" runat="server"></asp:TextBox>
     <br />
 
