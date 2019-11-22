@@ -9,12 +9,8 @@
 </head>
 <body>
     <header>
-        <div class="cwidth">
-            Humber School District Database
-        </div>
-    </header>
         <nav>
-            <a class="addbutton" href="ListTeachers.aspx" >Teachers</a>
+            <a  href="ListTeachers.aspx" >Teachers</a>
             <a href="ListStudents.aspx">Students</a>
             <a href="ListClasses.aspx">Classes</a>
             <div class="dropdown">
@@ -26,6 +22,8 @@
                 </div>
             </div>
         </nav>
+    </header>
+        
     <div class="cwidth">
         <form id="form1" runat="server">
             <asp:ContentPlaceHolder ID="body" runat="server">
