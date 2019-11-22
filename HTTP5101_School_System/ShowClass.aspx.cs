@@ -9,6 +9,7 @@ namespace HTTP5101_School_System
 {
     public partial class ShowClass : System.Web.UI.Page
     {
+        int id;
         protected void Page_Load(object sender, EventArgs e)
         {
             bool valid = true;
@@ -17,8 +18,9 @@ namespace HTTP5101_School_System
 
             if (valid)
             {
+                id= Int32.Parse(classid);
                 var db = new SCHOOLDB();
-                Dictionary<String, String> class_record = db.FindClass(Int32.Parse(classid));
+                Dictionary<String, String> class_record = db.FindClass(id);
 
                 if (class_record.Count > 0)
                 {
@@ -43,6 +45,11 @@ namespace HTTP5101_School_System
             }
         }
 
-
+        protected void deleteClass_Click(object sender, EventArgs e)
+        {
+            var db = new SCHOOLDB();
+            db.Add_Query("DELETE FROM `classes` WHERE `CLASSID` = " + id + "");
+            Server.Transfer("ListClasses.aspx");
         }
+    }
     }

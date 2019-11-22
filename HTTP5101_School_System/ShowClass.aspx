@@ -7,6 +7,7 @@
             Start Date: <span id="start_date" runat="server"></span><br />
             Finish: <span id="finish_date" runat="server"></span><br />
             
+            <asp:Button runat="server" id="deleteClass" Text="Remove This Class" OnClick="deleteClass_Click" />
 
         </div>
 
