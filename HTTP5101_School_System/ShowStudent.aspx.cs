@@ -11,6 +11,9 @@ namespace HTTP5101_School_System
     {
         int id = 0;
         string updateStudentFirstName = null;
+        string updateStudentLastName = null;
+        string updateStudentNumber = null;
+        string updateStudentEnrollDate = null;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -23,6 +26,9 @@ namespace HTTP5101_School_System
             {
                 id = Int32.Parse(studentid);
                 updateStudentFirstName = update_student_first_name.Text.ToString();
+                updateStudentLastName = update_student_last_name.Text.ToString();
+                updateStudentNumber = update_student_num.Text.ToString();
+                updateStudentEnrollDate = update_enrollment_date.Text.ToString();
                 var db = new SCHOOLDB();
                 Dictionary<String, String> student_record = db.FindStudent(id);
 
@@ -83,9 +89,20 @@ namespace HTTP5101_School_System
         protected void updateStudent_Click(object sender, EventArgs e)
         {
             var db = new SCHOOLDB();
+            //simple way of runinng update query
+            //better way would be to use one string with substrings toggled on or off depending on null/empty check
             if(!String.IsNullOrEmpty(updateStudentFirstName))
                 db.Add_Query("UPDATE `students` SET `STUDENTFNAME`='"+ updateStudentFirstName + "' WHERE STUDENTID="+ id+ "");
-            
+
+            if (!String.IsNullOrEmpty(updateStudentLastName))
+                db.Add_Query("UPDATE `students` SET `STUDENTLNAME`='" + updateStudentLastName + "' WHERE STUDENTID=" + id + "");
+
+            if (!String.IsNullOrEmpty(updateStudentNumber))
+                db.Add_Query("UPDATE `students` SET `STUDENTNUMBER`='" + updateStudentNumber + "' WHERE STUDENTID=" + id + "");
+
+            if (!String.IsNullOrEmpty(updateStudentEnrollDate))
+                db.Add_Query("UPDATE `students` SET `ENROLMENTDATE`='" + updateStudentEnrollDate + "' WHERE STUDENTID=" + id + "");
+
             Server.Transfer("ShowStudent.aspx?studentid=" + id);
 
         }
