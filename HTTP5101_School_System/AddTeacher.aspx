@@ -1,23 +1,23 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="AddTeacher.aspx.cs" Inherits="HTTP5101_School_System.WebForm4" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="body" runat="server">
-   
-    <asp:Label ID="teacheridLabel" Text="teacher id" AssociatedControlID="teacher_id" runat="server"></asp:Label>
+    
+    <div class="formfield">
+    <h1>Add a Teacher</h1>
+    <asp:Label ID="teacheridLabel" Text="Teacher id" AssociatedControlID="teacher_id" runat="server"></asp:Label>
     <asp:TextBox ID="teacher_id" runat="server"></asp:TextBox>
-
     <br />
 
-    
-    <asp:Label ID="nameLabel" Text="teacher first name" AssociatedControlID="name" runat="server"></asp:Label>
+    <asp:Label ID="nameLabel" Text="Teacher First Name" AssociatedControlID="name" runat="server"></asp:Label>
     <asp:TextBox ID="name" runat="server"></asp:TextBox>
 
     <br />
     
-    <asp:Label ID="lnameLabel" Text="teacher last name" AssociatedControlID="lname" runat="server"></asp:Label>
+    <asp:Label ID="lnameLabel" Text="Teacher Last Name" AssociatedControlID="lname" runat="server"></asp:Label>
     <asp:TextBox ID="lname" runat="server"></asp:TextBox>
     
     <br />
 
-    <asp:Label ID="employeenumberLabel" Text="teacher employee" AssociatedControlID="teacher_employeenumber" runat="server"></asp:Label>
+    <asp:Label ID="employeenumberLabel" Text="Employee Number" AssociatedControlID="teacher_employeenumber" runat="server"></asp:Label>
     <asp:TextBox ID="teacher_employeenumber" runat="server"></asp:TextBox>
     
     <br />
@@ -32,7 +32,7 @@
 
     <br />
 
-    <asp:Button runat="server" Text="submit"/>
-
+    <asp:Button runat="server" Text="Submit"/>
+    </div>
     <a href ="ListTeachers.aspx">List Teachers</a>
 </asp:Content>
