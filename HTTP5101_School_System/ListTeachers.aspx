@@ -3,7 +3,7 @@
 <asp:Content ID="teachers_list" ContentPlaceHolderID="body" runat="server">
     <h1>Teachers</h1>
     <div><asp:TextBox ID="search" runat="server"></asp:TextBox>
-        <asp:Button runat="server" Text="submit"/></div>
+        <asp:Button runat="server" Text="Search"/></div>
     <div class="_table" runat="server">
         
             <div class="listitem">

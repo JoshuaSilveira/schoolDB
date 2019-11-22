@@ -10,6 +10,7 @@
 <body>
     <header>
         <nav>
+            <a  href="Index.aspx" >Home</a>
             <a  href="ListTeachers.aspx" >Teachers</a>
             <a href="ListStudents.aspx">Students</a>
             <a href="ListClasses.aspx">Classes</a>

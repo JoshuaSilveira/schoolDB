@@ -1,7 +1,7 @@
 ﻿
 /*GENERAL CSS*/
 .cwidth{max-width:1080px; margin:0 auto;}
-header,footer{background:#b2b2b2;}
+header,footer{background:white;}
 
 body{font-family:sans-serif;}
 footer{margin-top:50px;text-align:center;font-size:10px;}
@@ -147,6 +147,6 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
-    background-color: #111;
+.searchbar{
+    width: 35%;
 }
