@@ -90,7 +90,7 @@ namespace HTTP5101_School_System
         {
             var db = new SCHOOLDB();
             //simple way of runinng update query
-            //better way would be to use one string with substrings toggled on or off depending on null/empty check
+            //better way would be to use one string with substrings toggled on or off depending if the field are empty or null
             if(!String.IsNullOrEmpty(updateStudentFirstName))
                 db.Add_Query("UPDATE `students` SET `STUDENTFNAME`='"+ updateStudentFirstName + "' WHERE STUDENTID="+ id+ "");
 
