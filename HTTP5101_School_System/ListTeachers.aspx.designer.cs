@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HTTP5101_School_System
-{
-
-
-    public partial class WebForm1
-    {
-
+namespace HTTP5101_School_System {
+    
+    
+    public partial class WebForm1 {
+        
         /// <summary>
         /// search control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace HTTP5101_School_System
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox search;
-
+        
         /// <summary>
         /// teachers_result control.
         /// </summary>

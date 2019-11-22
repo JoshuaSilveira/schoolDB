@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="AddClasses.aspx.cs" Inherits="HTTP5101_School_System.WebForm6" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="body" runat="server">
+    <div class="formbody">
     <div class="formfield">
         <h1>Add a Class</h1>
         <asp:Label ID="classidLabel" Text="Class ID" AssociatedControlID="class_id" runat="server"></asp:Label>
@@ -34,6 +35,5 @@
 
         <asp:Button runat="server" Text="Submit"/>
     </div>
-    <a href ="ListClasses.aspx">List classes</a>
-
+    </div>
 </asp:Content>

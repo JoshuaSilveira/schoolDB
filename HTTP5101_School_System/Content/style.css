@@ -102,6 +102,7 @@ h1 {
 }
 
 nav {
+    text-align: center;
     list-style-type: none;
     background-color: #333;
 }
@@ -130,6 +131,7 @@ input[type=text], select {
     background-color: lightgray;
     padding: 20px;
     margin: 15px;
+    width: 50%;
 }
 
 .formfield h1 {
@@ -147,6 +149,16 @@ input[type=submit] {
     cursor: pointer;
 }
 
-.searchbar{
-    width: 35%;
+.searchbar {
+    width: 30%;
+    white-space: nowrap;
+   
 }
+
+.formbody {
+   position:relative;
+   left:20%;
+}
+
+
+   

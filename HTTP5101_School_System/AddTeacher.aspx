@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="AddTeacher.aspx.cs" Inherits="HTTP5101_School_System.WebForm4" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="body" runat="server">
-    
+    <div class="formbody">
     <div class="formfield">
     <h1>Add a Teacher</h1>
     <asp:Label ID="teacheridLabel" Text="Teacher ID" AssociatedControlID="teacher_id" runat="server"></asp:Label>
@@ -34,5 +34,5 @@
 
     <asp:Button runat="server" Text="Submit"/>
     </div>
-    <a href ="ListTeachers.aspx">List Teachers</a>
+    </div>
 </asp:Content>
