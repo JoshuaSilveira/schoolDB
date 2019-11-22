@@ -17,8 +17,10 @@ namespace HTTP5101_School_System
             {
                 classes_result.InnerHtml += "<div class=\"listitem\">";
 
+                string classid = row["CLASSID"];
+
                 string classcode = row["CLASSCODE"];
-                classes_result.InnerHtml += "<div class=\"col5\">" + classcode + "</div>";
+                classes_result.InnerHtml += "<div class=\"col5\"><a href =\"ShowClass.aspx?classid=" + classid + "\">" + classcode + "</a></div>";
 
                 string teacherid = row["TEACHERID"];
                 classes_result.InnerHtml += "<div class=\"col5\">" + teacherid + "</div>";

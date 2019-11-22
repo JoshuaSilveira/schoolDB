@@ -143,6 +143,7 @@
     <Content Include="Layout.Master" />
     <Content Include="ListTeachers.aspx" />
     <Content Include="ListClasses.aspx" />
+    <Content Include="ShowClass.aspx" />
     <Content Include="ShowTeacher.aspx" />
     <Content Include="View.aspx" />
     <Content Include="AddTeacher.aspx" />
@@ -224,6 +225,13 @@
     </Compile>
     <Compile Include="ListClasses.aspx.designer.cs">
       <DependentUpon>ListClasses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowClass.aspx.cs">
+      <DependentUpon>ShowClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowClass.aspx.designer.cs">
+      <DependentUpon>ShowClass.aspx</DependentUpon>
     </Compile>
     <Compile Include="ShowTeacher.aspx.cs">
       <DependentUpon>ShowTeacher.aspx</DependentUpon>

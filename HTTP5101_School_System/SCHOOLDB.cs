@@ -117,6 +117,63 @@ namespace HTTP5101_School_System
 
             return student;
         }
+
+        public Dictionary<String, String> FindClass(int id)
+        {
+            //Utilize the connection string
+            MySqlConnection Connect = new MySqlConnection(ConnectionString);
+            //create a "blank" student so that our method can return something if we're not successful catching student data
+            Dictionary<String, String> course = new Dictionary<String, String>();
+
+            //we will try to grab student data from the database, if we fail, a message will appear in Debug>Windows>Output dialogue
+            try
+            {
+                //Build a custom query with the id information provided
+                string query = "select * from CLASSES where classid = " + id;
+                Debug.WriteLine("Connection Initialized...");
+                //open the db connection
+                Connect.Open();
+                //Run out query against the database
+                MySqlCommand cmd = new MySqlCommand(query, Connect);
+                //grab the result set
+                MySqlDataReader resultset = cmd.ExecuteReader();
+
+                //Create a list of students (although we're only trying to get 1)
+                List<Dictionary<String, String>> Courses = new List<Dictionary<String, String>>();
+
+                //read through the result set
+                while (resultset.Read())
+                {
+                    //information that will store a single student
+                    Dictionary<String, String> Course = new Dictionary<String, String>();
+
+                    //Look at each column in the result set row, add both the column name and the column value to our Student dictionary
+                    for (int i = 0; i < resultset.FieldCount; i++)
+                    {
+                        Debug.WriteLine("Attempting to transfer data of " + resultset.GetName(i));
+                        Debug.WriteLine("Attempting to transfer data of " + resultset.GetString(i));
+                        Course.Add(resultset.GetName(i), resultset.GetString(i));
+
+                    }
+                    //Add the student to the list of students
+                    Courses.Add(Course);
+                }
+
+                course = Courses[0]; //get the first student
+
+            }
+            catch (Exception ex)
+            {
+                //If something (anything) goes wrong with the try{} block, this block will execute
+                Debug.WriteLine("Something went wrong in the find Student method!");
+                Debug.WriteLine(ex.ToString());
+            }
+
+            Connect.Close();
+            Debug.WriteLine("Database Connection Terminated.");
+
+            return course;
+        }
         public Dictionary<String, String> findTeacher(int id)
         {
             //Utilize the connection string
@@ -124,7 +181,7 @@ namespace HTTP5101_School_System
             //create a "blank" student so that our method can return something if we're not successful catching student data
             Dictionary<String, String> teacher = new Dictionary<String, String>();
 
-            //we will try to grab student data from the database, if we fail, a message will appear in Debug>Windows>Output dialogue
+            //we will try to grab teacher data from the database, if we fail, a message will appear in Debug>Windows>Output dialogue
             try
             {
                 //Build a custom query with the id information provided
@@ -154,11 +211,11 @@ namespace HTTP5101_School_System
                         Teacher.Add(resultset.GetName(i), resultset.GetString(i));
 
                     }
-                    //Add the student to the list of students
+                    //Add the student to the list of teacher
                     Teachers.Add(Teacher);
                 }
 
-                teacher = Teachers[0]; //get the first student
+                teacher = Teachers[0]; //get the first teacher
 
             }
             catch (Exception ex)
